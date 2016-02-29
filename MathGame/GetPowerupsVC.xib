@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GetPowerupsVC">
+            <connections>
+                <outlet property="scrollView" destination="iOH-Sd-JSI" id="4tq-zv-V2B"/>
+                <outlet property="view" destination="iN0-l3-epB" id="wpZ-3L-eqo"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_plain" translatesAutoresizingMaskIntoConstraints="NO" id="6kP-cQ-9yh">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2f-YA-BQr">
+                    <rect key="frame" x="524" y="8" width="68" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="68" id="gzw-4N-r8p"/>
+                        <constraint firstAttribute="height" constant="30" id="hF0-Zg-psg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                    <state key="normal" title="Done">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="doneButtonAction:" destination="-1" eventType="touchUpInside" id="NQY-NJ-xq9"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get Powerups!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLc-lR-yqD">
+                    <rect key="frame" x="168" y="27" width="264" height="43"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43" id="dIE-WJ-Qf5"/>
+                        <constraint firstAttribute="width" constant="264" id="tTU-tw-Kis"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iOH-Sd-JSI">
+                    <rect key="frame" x="8" y="78" width="584" height="514"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IoB-Qh-PzX">
+                            <rect key="frame" x="142" y="52" width="300" height="128"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3NC-bX-XKF">
+                                    <rect key="frame" x="186" y="46" width="106" height="36"/>
+                                    <color key="backgroundColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="0.5" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <state key="normal" title="Buy Now!">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="buyOneEquationSolver:" destination="-1" eventType="touchUpInside" id="YCC-24-NJa"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Equation Solver!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSl-ED-DFg">
+                                    <rect key="frame" x="8" y="8" width="186" height="22"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Get this to solve that tough equation so you can move on to the next one!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cje-3C-hzP">
+                                    <rect key="frame" x="8" y="38" width="170" height="75"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=".99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47X-5z-9Y9">
+                                    <rect key="frame" x="267" y="8" width="25" height="21"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                    <color key="textColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.20392156859999999" green="0.66666666669999997" blue="0.86274509799999999" alpha="0.5" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="128" id="Mos-SZ-1ca"/>
+                                <constraint firstAttribute="width" constant="300" id="vvP-Q4-yiV"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R5t-Xj-30n">
+                            <rect key="frame" x="142" y="188" width="300" height="128"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="niF-Y0-nYU">
+                                    <rect key="frame" x="186" y="49" width="106" height="36"/>
+                                    <color key="backgroundColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="0.5" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <state key="normal" title="Buy Now!">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="buyOneTimeExtender:" destination="-1" eventType="touchUpInside" id="P61-DC-ux5"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="30 Seconds More!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yhp-UQ-7CJ">
+                                    <rect key="frame" x="8" y="8" width="186" height="21"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="On timed math boards, give yourself an additional 30 seconds to increase your score!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAh-Pk-LvE">
+                                    <rect key="frame" x="8" y="37" width="170" height="75"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=".99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8N-dB-T8w">
+                                    <rect key="frame" x="267" y="8" width="25" height="21"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                    <color key="textColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="128" id="1ce-y3-z0h"/>
+                                <constraint firstAttribute="width" constant="300" id="iN5-eR-ZVY"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fwf-KC-Oy6">
+                            <rect key="frame" x="142" y="324" width="300" height="128"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ah-eI-ByM">
+                                    <rect key="frame" x="186" y="46" width="106" height="36"/>
+                                    <color key="backgroundColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="0.5" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <state key="normal" title="Buy Now!">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="buyFiveEquationSolvers:" destination="-1" eventType="touchUpInside" id="tJy-eT-pvm"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Get this to solve that tough equation so you can move on to the next one!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tx2-OJ-mj7">
+                                    <rect key="frame" x="8" y="38" width="170" height="75"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nt4-bJ-LHR">
+                                    <rect key="frame" x="256" y="8" width="36" height="22"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                    <color key="textColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Equation Solver! 5pk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mlz-Eu-FM3">
+                                    <rect key="frame" x="8" y="8" width="202" height="22"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.20392156859999999" green="0.66666666669999997" blue="0.86274509799999999" alpha="0.5" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="300" id="3ph-ry-fss"/>
+                                <constraint firstAttribute="height" constant="128" id="gDO-Qh-DkD"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fd2-6N-GqZ">
+                            <rect key="frame" x="142" y="460" width="300" height="128"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68L-oQ-0Ul">
+                                    <rect key="frame" x="186" y="49" width="106" height="36"/>
+                                    <color key="backgroundColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="0.5" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <state key="normal" title="Buy Now!">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="buyFiveTimeExtenders:" destination="-1" eventType="touchUpInside" id="haM-xD-cRR"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="On timed math boards, give yourself an additional 30 seconds to increase your score!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Irf-s5-sTO">
+                                    <rect key="frame" x="8" y="37" width="170" height="75"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHX-1p-G0g">
+                                    <rect key="frame" x="256" y="8" width="36" height="22"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                    <color key="textColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="30 Seconds More! 5pk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wkp-2k-qcJ">
+                                    <rect key="frame" x="8" y="8" width="213" height="22"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="300" id="SzM-EP-I8o"/>
+                                <constraint firstAttribute="height" constant="128" id="YrN-y9-pEn"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Ti-ux-GsP">
+                            <rect key="frame" x="142" y="732" width="300" height="128"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbI-T0-vCo">
+                                    <rect key="frame" x="186" y="49" width="106" height="36"/>
+                                    <color key="backgroundColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="0.5" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <state key="normal" title="Buy Now!">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="buyFivePackStars:" destination="-1" eventType="touchUpInside" id="doC-qo-rqM"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A Pack of 5 Stars to let you unlock additional levels!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvQ-NK-6U7">
+                                    <rect key="frame" x="8" y="37" width="170" height="75"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=".99" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7cZ-YX-ljr">
+                                    <rect key="frame" x="256" y="8" width="36" height="22"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                    <color key="textColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5 Pack Stars" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OeO-PX-Gqt">
+                                    <rect key="frame" x="8" y="7" width="118" height="22"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="128" id="44t-bh-fZy"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="Hnv-pk-ZMg"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="cWH-Y9-jhk"/>
+                                <constraint firstAttribute="width" constant="300" id="fou-mH-i1f"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H88-ZI-fSv">
+                            <rect key="frame" x="142" y="868" width="300" height="128"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yi4-IS-gv8">
+                                    <rect key="frame" x="186" y="49" width="106" height="36"/>
+                                    <color key="backgroundColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="0.5" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <state key="normal" title="Buy Now!">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="buyFifteenPackStars:" destination="-1" eventType="touchUpInside" id="fal-eM-FTk"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A Pack of 15 Stars to let you unlock additional levels!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJe-Lf-NoX">
+                                    <rect key="frame" x="8" y="37" width="170" height="75"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2.99" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wm0-Vh-vkZ">
+                                    <rect key="frame" x="256" y="8" width="36" height="22"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                    <color key="textColor" red="1" green="0.80000000000000004" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="15 Pack Stars" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBb-4e-gOB">
+                                    <rect key="frame" x="8" y="7" width="128" height="22"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.20392156859999999" green="0.66666666669999997" blue="0.86274509799999999" alpha="0.5" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="128" id="HGW-nP-ySG"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="L10-YK-V4f"/>
+                                <constraint firstAttribute="width" constant="300" id="ou7-cQ-s8r"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="uXz-bI-XYe"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BVs-7T-Z70">
+                            <rect key="frame" x="142" y="596" width="300" height="128"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvu-ex-MY0">
+                                    <rect key="frame" x="186" y="49" width="106" height="36"/>
+                                    <color key="backgroundColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="0.5" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <state key="normal" title="Buy Now!">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="buyUltimateUnlock:" destination="-1" eventType="touchUpInside" id="t2b-JC-A68"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="29.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iy8-jc-zwT">
+                                    <rect key="frame" x="248" y="8" width="44" height="22"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                    <color key="textColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ultimate Unlock!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4lD-35-Db2">
+                                    <rect key="frame" x="8" y="8" width="161" height="22"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Unlock all levels and all game types!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmz-r7-Bgw">
+                                    <rect key="frame" x="8" y="38" width="150" height="47"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.20392156859999999" green="0.66666666669999997" blue="0.86274509799999999" alpha="0.5" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="0cB-QD-fHr"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="Dvw-6W-ygZ"/>
+                                <constraint firstAttribute="width" constant="300" id="fda-hD-lhI"/>
+                                <constraint firstAttribute="height" constant="128" id="oxL-I7-kHV"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pZa-Ds-MI6">
+                            <rect key="frame" x="142" y="8" width="300" height="36"/>
+                            <color key="backgroundColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="0.5" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="300" id="Rjb-n6-yXp"/>
+                                <constraint firstAttribute="height" constant="36" id="fyr-fi-1gJ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <state key="normal" title="Restore Purchases">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="restorePurchases:" destination="-1" eventType="touchUpInside" id="Ae3-uq-8yZ"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pnp-gq-V4q">
+                            <rect key="frame" x="142" y="1004" width="300" height="128"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ql-8Z-x4J">
+                                    <rect key="frame" x="186" y="49" width="106" height="36"/>
+                                    <color key="backgroundColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="0.5" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <state key="normal" title="Buy Now!">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="buyThirtyPackStars:" destination="-1" eventType="touchUpInside" id="Dx5-eu-6je"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A Pack of 30 Stars to let you unlock additional levels!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKI-Pe-6Ja">
+                                    <rect key="frame" x="8" y="37" width="170" height="75"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4.99" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRh-8r-HsV">
+                                    <rect key="frame" x="252" y="8" width="40" height="22"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                    <color key="textColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="30 Pack Stars" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Yg-ka-zzV">
+                                    <rect key="frame" x="8" y="7" width="130" height="22"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="DjU-E8-kD4"/>
+                                <constraint firstAttribute="width" constant="300" id="anW-ex-fFg"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="dXg-uW-rHC"/>
+                                <constraint firstAttribute="height" constant="128" id="eUf-jk-b2i"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="BVs-7T-Z70" firstAttribute="top" secondItem="Fd2-6N-GqZ" secondAttribute="bottom" constant="8" id="2kd-0X-ieo"/>
+                        <constraint firstItem="fwf-KC-Oy6" firstAttribute="top" secondItem="R5t-Xj-30n" secondAttribute="bottom" constant="8" id="7Pk-3o-W3k"/>
+                        <constraint firstItem="pZa-Ds-MI6" firstAttribute="top" secondItem="iOH-Sd-JSI" secondAttribute="top" constant="8" id="7gA-Hp-82P"/>
+                        <constraint firstItem="Pnp-gq-V4q" firstAttribute="top" secondItem="H88-ZI-fSv" secondAttribute="bottom" constant="8" id="85c-tl-8GT"/>
+                        <constraint firstItem="pZa-Ds-MI6" firstAttribute="centerX" secondItem="iOH-Sd-JSI" secondAttribute="centerX" id="8g1-Y0-dhp"/>
+                        <constraint firstItem="Pnp-gq-V4q" firstAttribute="centerX" secondItem="iOH-Sd-JSI" secondAttribute="centerX" id="D1K-Ug-4NI"/>
+                        <constraint firstItem="H88-ZI-fSv" firstAttribute="centerX" secondItem="iOH-Sd-JSI" secondAttribute="centerX" id="MYm-wC-L4J"/>
+                        <constraint firstItem="1Ti-ux-GsP" firstAttribute="top" secondItem="BVs-7T-Z70" secondAttribute="bottom" constant="8" id="Pwe-MX-37s"/>
+                        <constraint firstItem="BVs-7T-Z70" firstAttribute="centerX" secondItem="iOH-Sd-JSI" secondAttribute="centerX" id="R5A-Sz-QCO"/>
+                        <constraint firstItem="Fd2-6N-GqZ" firstAttribute="top" secondItem="fwf-KC-Oy6" secondAttribute="bottom" constant="8" id="Rnv-Ua-Hds"/>
+                        <constraint firstItem="IoB-Qh-PzX" firstAttribute="top" secondItem="iOH-Sd-JSI" secondAttribute="top" constant="52" id="VMv-u6-MUd"/>
+                        <constraint firstItem="IoB-Qh-PzX" firstAttribute="centerX" secondItem="iOH-Sd-JSI" secondAttribute="centerX" id="Xil-Zd-soX"/>
+                        <constraint firstItem="1Ti-ux-GsP" firstAttribute="centerX" secondItem="iOH-Sd-JSI" secondAttribute="centerX" id="dnw-Ve-NaH"/>
+                        <constraint firstItem="Fd2-6N-GqZ" firstAttribute="centerX" secondItem="iOH-Sd-JSI" secondAttribute="centerX" id="fAz-B4-a67"/>
+                        <constraint firstItem="R5t-Xj-30n" firstAttribute="centerX" secondItem="iOH-Sd-JSI" secondAttribute="centerX" id="gdw-Gm-xkW"/>
+                        <constraint firstItem="R5t-Xj-30n" firstAttribute="top" secondItem="IoB-Qh-PzX" secondAttribute="bottom" constant="8" id="nz4-OZ-Ai4"/>
+                        <constraint firstItem="fwf-KC-Oy6" firstAttribute="centerX" secondItem="iOH-Sd-JSI" secondAttribute="centerX" id="rxT-dQ-qc4"/>
+                        <constraint firstItem="H88-ZI-fSv" firstAttribute="top" secondItem="1Ti-ux-GsP" secondAttribute="bottom" constant="8" id="zw0-2N-7qW"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="bLc-lR-yqD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="27" id="5Hs-mW-rwT"/>
+                <constraint firstItem="bLc-lR-yqD" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="5Yf-mU-rgY"/>
+                <constraint firstItem="6kP-cQ-9yh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Cpl-37-o79"/>
+                <constraint firstAttribute="bottom" secondItem="6kP-cQ-9yh" secondAttribute="bottom" id="FhK-hl-sT1"/>
+                <constraint firstItem="6kP-cQ-9yh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Juw-i3-MV8"/>
+                <constraint firstAttribute="trailing" secondItem="S2f-YA-BQr" secondAttribute="trailing" constant="8" id="KxR-4G-ADd"/>
+                <constraint firstAttribute="trailing" secondItem="6kP-cQ-9yh" secondAttribute="trailing" id="Qqb-dn-1cp"/>
+                <constraint firstAttribute="trailing" secondItem="iOH-Sd-JSI" secondAttribute="trailing" constant="8" id="Vmv-Wg-cPO"/>
+                <constraint firstItem="iOH-Sd-JSI" firstAttribute="top" secondItem="bLc-lR-yqD" secondAttribute="bottom" constant="8" id="cf6-WY-qE8"/>
+                <constraint firstItem="S2f-YA-BQr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="dFj-zH-0Rv"/>
+                <constraint firstItem="iOH-Sd-JSI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="dIx-XA-aQd"/>
+                <constraint firstAttribute="bottom" secondItem="iOH-Sd-JSI" secondAttribute="bottom" constant="8" id="thT-ME-NpR"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="433" y="263"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background_plain" width="1976" height="1522"/>
+    </resources>
+</document>

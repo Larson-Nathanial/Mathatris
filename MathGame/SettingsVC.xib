@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsVC">
+            <connections>
+                <outlet property="backgroundMusicSwitch" destination="hn6-7m-WQn" id="upc-lV-xFz"/>
+                <outlet property="soundEffectsSwitch" destination="A7C-ra-XG1" id="7uh-3S-UKL"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Dwd-Yo-HEg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_plain" translatesAutoresizingMaskIntoConstraints="NO" id="rpo-Lv-dKj">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hn6-7m-WQn">
+                    <rect key="frame" x="543" y="76" width="51" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="IH7-89-Y7w"/>
+                        <constraint firstAttribute="width" constant="49" id="rSc-e8-VNb"/>
+                    </constraints>
+                    <color key="onTintColor" red="0.26274509800000001" green="0.83529411760000005" blue="0.31764705879999999" alpha="0.5" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <action selector="backgroundMusicSwitchAction:" destination="-1" eventType="valueChanged" id="vgQ-NK-ZZ5"/>
+                    </connections>
+                </switch>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A7C-ra-XG1">
+                    <rect key="frame" x="543" y="119" width="51" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="5Ua-zs-m89"/>
+                        <constraint firstAttribute="width" constant="49" id="vJx-Pt-dTk"/>
+                    </constraints>
+                    <color key="onTintColor" red="0.26274509800000001" green="0.83529411760000005" blue="0.31764705879999999" alpha="0.5" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <action selector="soundEffectSwitchAction:" destination="-1" eventType="valueChanged" id="MsP-Np-YXz"/>
+                    </connections>
+                </switch>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dr3-Nk-0uX">
+                    <rect key="frame" x="530" y="8" width="62" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="62" id="Scz-dg-hcl"/>
+                        <constraint firstAttribute="height" constant="33" id="hAS-Zn-Pd7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Done"/>
+                    <connections>
+                        <action selector="doneButtonAction:" destination="-1" eventType="touchUpInside" id="LDB-GN-8X0"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Background Music" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbl-HK-1f9">
+                    <rect key="frame" x="8" y="73" width="194" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="194" id="8BR-F1-A1j"/>
+                        <constraint firstAttribute="height" constant="37" id="pcE-HP-5ch"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sound Effects" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n8g-1C-Dao">
+                    <rect key="frame" x="57" y="118" width="145" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="145" id="iU5-qB-R7I"/>
+                        <constraint firstAttribute="height" constant="34" id="qIb-oX-tbj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="rpo-Lv-dKj" secondAttribute="trailing" id="51Z-Mq-E9n"/>
+                <constraint firstAttribute="trailing" secondItem="A7C-ra-XG1" secondAttribute="trailing" constant="8" id="CCX-fW-VQF"/>
+                <constraint firstAttribute="bottom" secondItem="rpo-Lv-dKj" secondAttribute="bottom" id="FnX-tb-7Zb"/>
+                <constraint firstItem="hn6-7m-WQn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="76" id="IZM-tt-uD8"/>
+                <constraint firstItem="hbl-HK-1f9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="NUA-aZ-1QJ"/>
+                <constraint firstItem="rpo-Lv-dKj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="SJS-U9-DPK"/>
+                <constraint firstItem="hbl-HK-1f9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="73" id="Sxa-9f-cck"/>
+                <constraint firstItem="rpo-Lv-dKj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="XtD-A8-aMv"/>
+                <constraint firstAttribute="trailing" secondItem="hn6-7m-WQn" secondAttribute="trailing" constant="8" id="dRW-js-TdO"/>
+                <constraint firstItem="n8g-1C-Dao" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="57" id="eIq-V0-tQU"/>
+                <constraint firstAttribute="trailing" secondItem="Dr3-Nk-0uX" secondAttribute="trailing" constant="8" id="h7s-W4-2Eb"/>
+                <constraint firstItem="rpo-Lv-dKj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="iMN-db-r4K"/>
+                <constraint firstItem="n8g-1C-Dao" firstAttribute="top" secondItem="hbl-HK-1f9" secondAttribute="bottom" constant="8" id="lcn-Ts-uxp"/>
+                <constraint firstItem="A7C-ra-XG1" firstAttribute="top" secondItem="hn6-7m-WQn" secondAttribute="bottom" constant="12" id="sAv-Mc-0Oc"/>
+                <constraint firstItem="Dr3-Nk-0uX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="xD7-dK-hR4"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="background_plain" width="1976" height="1522"/>
+    </resources>
+</document>

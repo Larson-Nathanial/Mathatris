@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GetPlayerNameVC">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="249"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_plain" translatesAutoresizingMaskIntoConstraints="NO" id="orj-GO-K60">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="249"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tell us what name to use for your high scores and the leader board!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Svs-Fj-hQF">
+                    <rect key="frame" x="8" y="8" width="284" height="190"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="190" id="ydA-Pd-oJU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="28"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="your name here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t2i-dV-I7e">
+                    <rect key="frame" x="8" y="206" width="284" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="LwS-2q-GZa"/>
+                    </constraints>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="go"/>
+                    <connections>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="gXW-Ot-bhs"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Svs-Fj-hQF" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="LC4-2A-qvP"/>
+                <constraint firstItem="orj-GO-K60" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="LH7-am-tsJ"/>
+                <constraint firstItem="t2i-dV-I7e" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="S11-Fv-VBF"/>
+                <constraint firstItem="Svs-Fj-hQF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="TLM-VS-Rna"/>
+                <constraint firstAttribute="trailing" secondItem="t2i-dV-I7e" secondAttribute="trailing" constant="8" id="WB0-cT-mWt"/>
+                <constraint firstItem="t2i-dV-I7e" firstAttribute="top" secondItem="Svs-Fj-hQF" secondAttribute="bottom" constant="8" id="Wr6-Fy-G13"/>
+                <constraint firstAttribute="trailing" secondItem="Svs-Fj-hQF" secondAttribute="trailing" constant="8" id="cxY-W6-pwl"/>
+                <constraint firstAttribute="trailing" secondItem="orj-GO-K60" secondAttribute="trailing" id="eGp-By-1iR"/>
+                <constraint firstItem="orj-GO-K60" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gDt-eN-Pih"/>
+                <constraint firstItem="t2i-dV-I7e" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="tzf-3S-a32"/>
+                <constraint firstItem="Svs-Fj-hQF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="v1M-jI-OaJ"/>
+                <constraint firstAttribute="bottom" secondItem="orj-GO-K60" secondAttribute="bottom" id="z6Y-1e-KgR"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="playNameTextField" destination="t2i-dV-I7e" id="O6z-tu-hw5"/>
+            </connections>
+            <point key="canvasLocation" x="446" y="171.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background_plain" width="1976" height="1522"/>
+    </resources>
+</document>

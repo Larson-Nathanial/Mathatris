@@ -1,0 +1,776 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F76D073B1BD0359400A23207 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F76D073A1BD0359400A23207 /* main.m */; };
+		F76D073E1BD0359400A23207 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F76D073D1BD0359400A23207 /* AppDelegate.m */; };
+		F76D07411BD0359400A23207 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F76D07401BD0359400A23207 /* ViewController.m */; };
+		F76D07441BD0359400A23207 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F76D07421BD0359400A23207 /* Main.storyboard */; };
+		F76D07461BD0359400A23207 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F76D07451BD0359400A23207 /* Assets.xcassets */; };
+		F76D07491BD0359400A23207 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F76D07471BD0359400A23207 /* LaunchScreen.storyboard */; };
+		F76D07541BD0359400A23207 /* MathGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F76D07531BD0359400A23207 /* MathGameTests.m */; };
+		F76D075F1BD0359400A23207 /* MathGameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F76D075E1BD0359400A23207 /* MathGameUITests.m */; };
+		F76D076D1BD04D7E00A23207 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F76D076C1BD04D7E00A23207 /* QuartzCore.framework */; };
+		F76D07731BD0886200A23207 /* StartScreenVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F76D07721BD0886200A23207 /* StartScreenVC.m */; };
+		F76D07761BD09B8500A23207 /* ChooseTypeScreenVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F76D07751BD09B8500A23207 /* ChooseTypeScreenVC.m */; };
+		F76D07791BD0A3BC00A23207 /* ChooseLevelScreenVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F76D07781BD0A3BC00A23207 /* ChooseLevelScreenVC.m */; };
+		F76D077B1BD0A3D900A23207 /* ChooseLevelScreenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F76D077A1BD0A3D800A23207 /* ChooseLevelScreenVC.xib */; };
+		F76D077E1BD0A50500A23207 /* ReviewGameScreenVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F76D077D1BD0A50500A23207 /* ReviewGameScreenVC.m */; };
+		F76D07801BD0A51000A23207 /* ReviewGameScreenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F76D077F1BD0A51000A23207 /* ReviewGameScreenVC.xib */; };
+		F76D07831BD1389000A23207 /* GamePlayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F76D07821BD1389000A23207 /* GamePlayVC.m */; };
+		F76D07851BD1389B00A23207 /* GamePlayVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F76D07841BD1389B00A23207 /* GamePlayVC.xib */; };
+		F76D078C1BD14F5500A23207 /* GameObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F76D078B1BD14F5500A23207 /* GameObject.m */; };
+		F76D078F1BD150B000A23207 /* GameLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = F76D078E1BD150B000A23207 /* GameLogic.m */; };
+		F76D07951BD2F4EE00A23207 /* GameCompletedVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F76D07941BD2F4EE00A23207 /* GameCompletedVC.m */; };
+		F76D07971BD2F50300A23207 /* GameCompletedVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F76D07961BD2F50300A23207 /* GameCompletedVC.xib */; };
+		F76D079A1BD6A24500A23207 /* PauseGameVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F76D07991BD6A24500A23207 /* PauseGameVC.m */; };
+		F76D079C1BD6A25000A23207 /* PauseGameVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F76D079B1BD6A25000A23207 /* PauseGameVC.xib */; };
+		F76D07A01BD6CEEA00A23207 /* GetPowerupsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F76D079F1BD6CEEA00A23207 /* GetPowerupsVC.m */; };
+		F76D07A21BD6CF0100A23207 /* GetPowerupsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F76D07A11BD6CF0100A23207 /* GetPowerupsVC.xib */; };
+		F76D07A61BD6E03400A23207 /* GetPlayerNameVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F76D07A51BD6E03400A23207 /* GetPlayerNameVC.m */; };
+		F76D07A81BD6E04200A23207 /* GetPlayerNameVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F76D07A71BD6E04200A23207 /* GetPlayerNameVC.xib */; };
+		F76D07AC1BD6E55400A23207 /* ManageScores.m in Sources */ = {isa = PBXBuildFile; fileRef = F76D07AB1BD6E55400A23207 /* ManageScores.m */; };
+		F76D07AE1BD7D34E00A23207 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F76D07AD1BD7D34E00A23207 /* iAd.framework */; };
+		F76D07B21BD7F43D00A23207 /* LeaderBoardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F76D07B11BD7F43D00A23207 /* LeaderBoardVC.m */; };
+		F76D07B41BD7F44900A23207 /* LeaderBoardVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F76D07B31BD7F44900A23207 /* LeaderBoardVC.xib */; };
+		F76D07B71BD7F45500A23207 /* LeaderBoardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F76D07B61BD7F45500A23207 /* LeaderBoardCell.m */; };
+		F76D07B91BD7F45F00A23207 /* LeaderBoardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F76D07B81BD7F45F00A23207 /* LeaderBoardCell.xib */; };
+		F76D07BD1BD7FACE00A23207 /* SettingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F76D07BC1BD7FACE00A23207 /* SettingsVC.m */; };
+		F76D07BF1BD7FAD900A23207 /* SettingsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F76D07BE1BD7FAD900A23207 /* SettingsVC.xib */; };
+		F76D07C71BD8250C00A23207 /* explode2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F76D07C41BD8250C00A23207 /* explode2.mp3 */; };
+		F76D07C81BD8250C00A23207 /* explode1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F76D07C51BD8250C00A23207 /* explode1.mp3 */; };
+		F76D07C91BD8250C00A23207 /* gameTrack1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F76D07C61BD8250C00A23207 /* gameTrack1.mp3 */; };
+		F76D07CB1BD8254B00A23207 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F76D07CA1BD8254B00A23207 /* AVFoundation.framework */; };
+		F76D07CD1BD8255100A23207 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F76D07CC1BD8255100A23207 /* AudioToolbox.framework */; };
+		F76D07D01BD82AD400A23207 /* explode2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F76D07CE1BD82AD400A23207 /* explode2.m4a */; };
+		F76D07D11BD82AD400A23207 /* explode1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F76D07CF1BD82AD400A23207 /* explode1.m4a */; };
+		F78CC3861BE3C727009235CC /* IAPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F78CC3851BE3C727009235CC /* IAPHelper.m */; };
+		F78CC3891BE3C7D9009235CC /* IAP.m in Sources */ = {isa = PBXBuildFile; fileRef = F78CC3881BE3C7D9009235CC /* IAP.m */; };
+		F78CC38C1BE51146009235CC /* UIView+Explode.m in Sources */ = {isa = PBXBuildFile; fileRef = F78CC38B1BE51146009235CC /* UIView+Explode.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F76D07501BD0359400A23207 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F76D072E1BD0359400A23207 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F76D07351BD0359400A23207;
+			remoteInfo = MathGame;
+		};
+		F76D075B1BD0359400A23207 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F76D072E1BD0359400A23207 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F76D07351BD0359400A23207;
+			remoteInfo = MathGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F76D07361BD0359400A23207 /* MathGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MathGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F76D073A1BD0359400A23207 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F76D073C1BD0359400A23207 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F76D073D1BD0359400A23207 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F76D073F1BD0359400A23207 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F76D07401BD0359400A23207 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F76D07431BD0359400A23207 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F76D07451BD0359400A23207 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F76D07481BD0359400A23207 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F76D074A1BD0359400A23207 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F76D074F1BD0359400A23207 /* MathGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MathGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F76D07531BD0359400A23207 /* MathGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MathGameTests.m; sourceTree = "<group>"; };
+		F76D07551BD0359400A23207 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F76D075A1BD0359400A23207 /* MathGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MathGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F76D075E1BD0359400A23207 /* MathGameUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MathGameUITests.m; sourceTree = "<group>"; };
+		F76D07601BD0359400A23207 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F76D076C1BD04D7E00A23207 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F76D07711BD0886200A23207 /* StartScreenVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartScreenVC.h; sourceTree = "<group>"; };
+		F76D07721BD0886200A23207 /* StartScreenVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartScreenVC.m; sourceTree = "<group>"; };
+		F76D07741BD09B8500A23207 /* ChooseTypeScreenVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseTypeScreenVC.h; sourceTree = "<group>"; };
+		F76D07751BD09B8500A23207 /* ChooseTypeScreenVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseTypeScreenVC.m; sourceTree = "<group>"; };
+		F76D07771BD0A3BC00A23207 /* ChooseLevelScreenVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseLevelScreenVC.h; sourceTree = "<group>"; };
+		F76D07781BD0A3BC00A23207 /* ChooseLevelScreenVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseLevelScreenVC.m; sourceTree = "<group>"; };
+		F76D077A1BD0A3D800A23207 /* ChooseLevelScreenVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChooseLevelScreenVC.xib; sourceTree = "<group>"; };
+		F76D077C1BD0A50500A23207 /* ReviewGameScreenVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReviewGameScreenVC.h; sourceTree = "<group>"; };
+		F76D077D1BD0A50500A23207 /* ReviewGameScreenVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReviewGameScreenVC.m; sourceTree = "<group>"; };
+		F76D077F1BD0A51000A23207 /* ReviewGameScreenVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReviewGameScreenVC.xib; sourceTree = "<group>"; };
+		F76D07811BD1389000A23207 /* GamePlayVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePlayVC.h; sourceTree = "<group>"; };
+		F76D07821BD1389000A23207 /* GamePlayVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamePlayVC.m; sourceTree = "<group>"; };
+		F76D07841BD1389B00A23207 /* GamePlayVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GamePlayVC.xib; sourceTree = "<group>"; };
+		F76D078A1BD14F5500A23207 /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; };
+		F76D078B1BD14F5500A23207 /* GameObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameObject.m; sourceTree = "<group>"; };
+		F76D078D1BD150B000A23207 /* GameLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLogic.h; sourceTree = "<group>"; };
+		F76D078E1BD150B000A23207 /* GameLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameLogic.m; sourceTree = "<group>"; };
+		F76D07931BD2F4EE00A23207 /* GameCompletedVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCompletedVC.h; sourceTree = "<group>"; };
+		F76D07941BD2F4EE00A23207 /* GameCompletedVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCompletedVC.m; sourceTree = "<group>"; };
+		F76D07961BD2F50300A23207 /* GameCompletedVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameCompletedVC.xib; sourceTree = "<group>"; };
+		F76D07981BD6A24500A23207 /* PauseGameVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PauseGameVC.h; sourceTree = "<group>"; };
+		F76D07991BD6A24500A23207 /* PauseGameVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PauseGameVC.m; sourceTree = "<group>"; };
+		F76D079B1BD6A25000A23207 /* PauseGameVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PauseGameVC.xib; sourceTree = "<group>"; };
+		F76D079E1BD6CEEA00A23207 /* GetPowerupsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetPowerupsVC.h; sourceTree = "<group>"; };
+		F76D079F1BD6CEEA00A23207 /* GetPowerupsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetPowerupsVC.m; sourceTree = "<group>"; };
+		F76D07A11BD6CF0100A23207 /* GetPowerupsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GetPowerupsVC.xib; sourceTree = "<group>"; };
+		F76D07A41BD6E03400A23207 /* GetPlayerNameVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetPlayerNameVC.h; sourceTree = "<group>"; };
+		F76D07A51BD6E03400A23207 /* GetPlayerNameVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetPlayerNameVC.m; sourceTree = "<group>"; };
+		F76D07A71BD6E04200A23207 /* GetPlayerNameVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GetPlayerNameVC.xib; sourceTree = "<group>"; };
+		F76D07AA1BD6E55400A23207 /* ManageScores.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManageScores.h; sourceTree = "<group>"; };
+		F76D07AB1BD6E55400A23207 /* ManageScores.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManageScores.m; sourceTree = "<group>"; };
+		F76D07AD1BD7D34E00A23207 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		F76D07B01BD7F43D00A23207 /* LeaderBoardVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeaderBoardVC.h; sourceTree = "<group>"; };
+		F76D07B11BD7F43D00A23207 /* LeaderBoardVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeaderBoardVC.m; sourceTree = "<group>"; };
+		F76D07B31BD7F44900A23207 /* LeaderBoardVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeaderBoardVC.xib; sourceTree = "<group>"; };
+		F76D07B51BD7F45500A23207 /* LeaderBoardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeaderBoardCell.h; sourceTree = "<group>"; };
+		F76D07B61BD7F45500A23207 /* LeaderBoardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeaderBoardCell.m; sourceTree = "<group>"; };
+		F76D07B81BD7F45F00A23207 /* LeaderBoardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeaderBoardCell.xib; sourceTree = "<group>"; };
+		F76D07BB1BD7FACE00A23207 /* SettingsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsVC.h; sourceTree = "<group>"; };
+		F76D07BC1BD7FACE00A23207 /* SettingsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsVC.m; sourceTree = "<group>"; };
+		F76D07BE1BD7FAD900A23207 /* SettingsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsVC.xib; sourceTree = "<group>"; };
+		F76D07C41BD8250C00A23207 /* explode2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = explode2.mp3; sourceTree = "<group>"; };
+		F76D07C51BD8250C00A23207 /* explode1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = explode1.mp3; sourceTree = "<group>"; };
+		F76D07C61BD8250C00A23207 /* gameTrack1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameTrack1.mp3; sourceTree = "<group>"; };
+		F76D07CA1BD8254B00A23207 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F76D07CC1BD8255100A23207 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F76D07CE1BD82AD400A23207 /* explode2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = explode2.m4a; sourceTree = "<group>"; };
+		F76D07CF1BD82AD400A23207 /* explode1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = explode1.m4a; sourceTree = "<group>"; };
+		F78CC3841BE3C727009235CC /* IAPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPHelper.h; sourceTree = "<group>"; };
+		F78CC3851BE3C727009235CC /* IAPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPHelper.m; sourceTree = "<group>"; };
+		F78CC3871BE3C7D9009235CC /* IAP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAP.h; sourceTree = "<group>"; };
+		F78CC3881BE3C7D9009235CC /* IAP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAP.m; sourceTree = "<group>"; };
+		F78CC38A1BE51146009235CC /* UIView+Explode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Explode.h"; sourceTree = "<group>"; };
+		F78CC38B1BE51146009235CC /* UIView+Explode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Explode.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F76D07331BD0359400A23207 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F76D07CD1BD8255100A23207 /* AudioToolbox.framework in Frameworks */,
+				F76D07CB1BD8254B00A23207 /* AVFoundation.framework in Frameworks */,
+				F76D07AE1BD7D34E00A23207 /* iAd.framework in Frameworks */,
+				F76D076D1BD04D7E00A23207 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F76D074C1BD0359400A23207 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F76D07571BD0359400A23207 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F76D072D1BD0359400A23207 = {
+			isa = PBXGroup;
+			children = (
+				F76D07CC1BD8255100A23207 /* AudioToolbox.framework */,
+				F76D07CA1BD8254B00A23207 /* AVFoundation.framework */,
+				F76D07AD1BD7D34E00A23207 /* iAd.framework */,
+				F76D076C1BD04D7E00A23207 /* QuartzCore.framework */,
+				F76D07381BD0359400A23207 /* MathGame */,
+				F76D07521BD0359400A23207 /* MathGameTests */,
+				F76D075D1BD0359400A23207 /* MathGameUITests */,
+				F76D07371BD0359400A23207 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F76D07371BD0359400A23207 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F76D07361BD0359400A23207 /* MathGame.app */,
+				F76D074F1BD0359400A23207 /* MathGameTests.xctest */,
+				F76D075A1BD0359400A23207 /* MathGameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F76D07381BD0359400A23207 /* MathGame */ = {
+			isa = PBXGroup;
+			children = (
+				F78CC38A1BE51146009235CC /* UIView+Explode.h */,
+				F78CC38B1BE51146009235CC /* UIView+Explode.m */,
+				F76D073C1BD0359400A23207 /* AppDelegate.h */,
+				F76D073D1BD0359400A23207 /* AppDelegate.m */,
+				F76D07C31BD8250100A23207 /* Audio */,
+				F76D073F1BD0359400A23207 /* ViewController.h */,
+				F76D07401BD0359400A23207 /* ViewController.m */,
+				F76D07711BD0886200A23207 /* StartScreenVC.h */,
+				F76D07721BD0886200A23207 /* StartScreenVC.m */,
+				F76D07BA1BD7FAC200A23207 /* Settings */,
+				F76D07AF1BD7F42B00A23207 /* Leaderboard */,
+				F76D07A91BD6E53E00A23207 /* PlayerScores */,
+				F76D07A31BD6E02500A23207 /* AskForInfo */,
+				F76D079D1BD6CED900A23207 /* Powerups */,
+				F76D07741BD09B8500A23207 /* ChooseTypeScreenVC.h */,
+				F76D07751BD09B8500A23207 /* ChooseTypeScreenVC.m */,
+				F76D07771BD0A3BC00A23207 /* ChooseLevelScreenVC.h */,
+				F76D07781BD0A3BC00A23207 /* ChooseLevelScreenVC.m */,
+				F76D077A1BD0A3D800A23207 /* ChooseLevelScreenVC.xib */,
+				F76D077C1BD0A50500A23207 /* ReviewGameScreenVC.h */,
+				F76D077D1BD0A50500A23207 /* ReviewGameScreenVC.m */,
+				F76D077F1BD0A51000A23207 /* ReviewGameScreenVC.xib */,
+				F76D07811BD1389000A23207 /* GamePlayVC.h */,
+				F76D07821BD1389000A23207 /* GamePlayVC.m */,
+				F76D07841BD1389B00A23207 /* GamePlayVC.xib */,
+				F76D07931BD2F4EE00A23207 /* GameCompletedVC.h */,
+				F76D07941BD2F4EE00A23207 /* GameCompletedVC.m */,
+				F76D07961BD2F50300A23207 /* GameCompletedVC.xib */,
+				F76D07981BD6A24500A23207 /* PauseGameVC.h */,
+				F76D07991BD6A24500A23207 /* PauseGameVC.m */,
+				F76D079B1BD6A25000A23207 /* PauseGameVC.xib */,
+				F78CC3831BE3C715009235CC /* IAP */,
+				F76D07861BD13B2900A23207 /* Game Classes */,
+				F76D07421BD0359400A23207 /* Main.storyboard */,
+				F76D07451BD0359400A23207 /* Assets.xcassets */,
+				F76D07471BD0359400A23207 /* LaunchScreen.storyboard */,
+				F76D074A1BD0359400A23207 /* Info.plist */,
+				F76D07391BD0359400A23207 /* Supporting Files */,
+			);
+			path = MathGame;
+			sourceTree = "<group>";
+		};
+		F76D07391BD0359400A23207 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F76D073A1BD0359400A23207 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F76D07521BD0359400A23207 /* MathGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				F76D07531BD0359400A23207 /* MathGameTests.m */,
+				F76D07551BD0359400A23207 /* Info.plist */,
+			);
+			path = MathGameTests;
+			sourceTree = "<group>";
+		};
+		F76D075D1BD0359400A23207 /* MathGameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F76D075E1BD0359400A23207 /* MathGameUITests.m */,
+				F76D07601BD0359400A23207 /* Info.plist */,
+			);
+			path = MathGameUITests;
+			sourceTree = "<group>";
+		};
+		F76D07861BD13B2900A23207 /* Game Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F76D078A1BD14F5500A23207 /* GameObject.h */,
+				F76D078B1BD14F5500A23207 /* GameObject.m */,
+				F76D078D1BD150B000A23207 /* GameLogic.h */,
+				F76D078E1BD150B000A23207 /* GameLogic.m */,
+			);
+			name = "Game Classes";
+			sourceTree = "<group>";
+		};
+		F76D079D1BD6CED900A23207 /* Powerups */ = {
+			isa = PBXGroup;
+			children = (
+				F76D079E1BD6CEEA00A23207 /* GetPowerupsVC.h */,
+				F76D079F1BD6CEEA00A23207 /* GetPowerupsVC.m */,
+				F76D07A11BD6CF0100A23207 /* GetPowerupsVC.xib */,
+			);
+			name = Powerups;
+			sourceTree = "<group>";
+		};
+		F76D07A31BD6E02500A23207 /* AskForInfo */ = {
+			isa = PBXGroup;
+			children = (
+				F76D07A41BD6E03400A23207 /* GetPlayerNameVC.h */,
+				F76D07A51BD6E03400A23207 /* GetPlayerNameVC.m */,
+				F76D07A71BD6E04200A23207 /* GetPlayerNameVC.xib */,
+			);
+			name = AskForInfo;
+			sourceTree = "<group>";
+		};
+		F76D07A91BD6E53E00A23207 /* PlayerScores */ = {
+			isa = PBXGroup;
+			children = (
+				F76D07AA1BD6E55400A23207 /* ManageScores.h */,
+				F76D07AB1BD6E55400A23207 /* ManageScores.m */,
+			);
+			name = PlayerScores;
+			sourceTree = "<group>";
+		};
+		F76D07AF1BD7F42B00A23207 /* Leaderboard */ = {
+			isa = PBXGroup;
+			children = (
+				F76D07B01BD7F43D00A23207 /* LeaderBoardVC.h */,
+				F76D07B11BD7F43D00A23207 /* LeaderBoardVC.m */,
+				F76D07B31BD7F44900A23207 /* LeaderBoardVC.xib */,
+				F76D07B51BD7F45500A23207 /* LeaderBoardCell.h */,
+				F76D07B61BD7F45500A23207 /* LeaderBoardCell.m */,
+				F76D07B81BD7F45F00A23207 /* LeaderBoardCell.xib */,
+			);
+			name = Leaderboard;
+			sourceTree = "<group>";
+		};
+		F76D07BA1BD7FAC200A23207 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F76D07BB1BD7FACE00A23207 /* SettingsVC.h */,
+				F76D07BC1BD7FACE00A23207 /* SettingsVC.m */,
+				F76D07BE1BD7FAD900A23207 /* SettingsVC.xib */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		F76D07C31BD8250100A23207 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				F76D07CE1BD82AD400A23207 /* explode2.m4a */,
+				F76D07CF1BD82AD400A23207 /* explode1.m4a */,
+				F76D07C41BD8250C00A23207 /* explode2.mp3 */,
+				F76D07C51BD8250C00A23207 /* explode1.mp3 */,
+				F76D07C61BD8250C00A23207 /* gameTrack1.mp3 */,
+			);
+			name = Audio;
+			sourceTree = "<group>";
+		};
+		F78CC3831BE3C715009235CC /* IAP */ = {
+			isa = PBXGroup;
+			children = (
+				F78CC3841BE3C727009235CC /* IAPHelper.h */,
+				F78CC3851BE3C727009235CC /* IAPHelper.m */,
+				F78CC3871BE3C7D9009235CC /* IAP.h */,
+				F78CC3881BE3C7D9009235CC /* IAP.m */,
+			);
+			name = IAP;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F76D07351BD0359400A23207 /* MathGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F76D07631BD0359500A23207 /* Build configuration list for PBXNativeTarget "MathGame" */;
+			buildPhases = (
+				F76D07321BD0359400A23207 /* Sources */,
+				F76D07331BD0359400A23207 /* Frameworks */,
+				F76D07341BD0359400A23207 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MathGame;
+			productName = MathGame;
+			productReference = F76D07361BD0359400A23207 /* MathGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F76D074E1BD0359400A23207 /* MathGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F76D07661BD0359500A23207 /* Build configuration list for PBXNativeTarget "MathGameTests" */;
+			buildPhases = (
+				F76D074B1BD0359400A23207 /* Sources */,
+				F76D074C1BD0359400A23207 /* Frameworks */,
+				F76D074D1BD0359400A23207 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F76D07511BD0359400A23207 /* PBXTargetDependency */,
+			);
+			name = MathGameTests;
+			productName = MathGameTests;
+			productReference = F76D074F1BD0359400A23207 /* MathGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F76D07591BD0359400A23207 /* MathGameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F76D07691BD0359500A23207 /* Build configuration list for PBXNativeTarget "MathGameUITests" */;
+			buildPhases = (
+				F76D07561BD0359400A23207 /* Sources */,
+				F76D07571BD0359400A23207 /* Frameworks */,
+				F76D07581BD0359400A23207 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F76D075C1BD0359400A23207 /* PBXTargetDependency */,
+			);
+			name = MathGameUITests;
+			productName = MathGameUITests;
+			productReference = F76D075A1BD0359400A23207 /* MathGameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F76D072E1BD0359400A23207 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = nathanlarson;
+				TargetAttributes = {
+					F76D07351BD0359400A23207 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					F76D074E1BD0359400A23207 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = F76D07351BD0359400A23207;
+					};
+					F76D07591BD0359400A23207 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = F76D07351BD0359400A23207;
+					};
+				};
+			};
+			buildConfigurationList = F76D07311BD0359400A23207 /* Build configuration list for PBXProject "MathGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F76D072D1BD0359400A23207;
+			productRefGroup = F76D07371BD0359400A23207 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F76D07351BD0359400A23207 /* MathGame */,
+				F76D074E1BD0359400A23207 /* MathGameTests */,
+				F76D07591BD0359400A23207 /* MathGameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F76D07341BD0359400A23207 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F76D07971BD2F50300A23207 /* GameCompletedVC.xib in Resources */,
+				F76D07B91BD7F45F00A23207 /* LeaderBoardCell.xib in Resources */,
+				F76D079C1BD6A25000A23207 /* PauseGameVC.xib in Resources */,
+				F76D07491BD0359400A23207 /* LaunchScreen.storyboard in Resources */,
+				F76D07A81BD6E04200A23207 /* GetPlayerNameVC.xib in Resources */,
+				F76D07461BD0359400A23207 /* Assets.xcassets in Resources */,
+				F76D07851BD1389B00A23207 /* GamePlayVC.xib in Resources */,
+				F76D077B1BD0A3D900A23207 /* ChooseLevelScreenVC.xib in Resources */,
+				F76D07A21BD6CF0100A23207 /* GetPowerupsVC.xib in Resources */,
+				F76D07441BD0359400A23207 /* Main.storyboard in Resources */,
+				F76D07D01BD82AD400A23207 /* explode2.m4a in Resources */,
+				F76D07801BD0A51000A23207 /* ReviewGameScreenVC.xib in Resources */,
+				F76D07D11BD82AD400A23207 /* explode1.m4a in Resources */,
+				F76D07B41BD7F44900A23207 /* LeaderBoardVC.xib in Resources */,
+				F76D07C91BD8250C00A23207 /* gameTrack1.mp3 in Resources */,
+				F76D07BF1BD7FAD900A23207 /* SettingsVC.xib in Resources */,
+				F76D07C81BD8250C00A23207 /* explode1.mp3 in Resources */,
+				F76D07C71BD8250C00A23207 /* explode2.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F76D074D1BD0359400A23207 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F76D07581BD0359400A23207 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F76D07321BD0359400A23207 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F76D078C1BD14F5500A23207 /* GameObject.m in Sources */,
+				F76D07BD1BD7FACE00A23207 /* SettingsVC.m in Sources */,
+				F76D07B71BD7F45500A23207 /* LeaderBoardCell.m in Sources */,
+				F76D07AC1BD6E55400A23207 /* ManageScores.m in Sources */,
+				F76D07A61BD6E03400A23207 /* GetPlayerNameVC.m in Sources */,
+				F76D07411BD0359400A23207 /* ViewController.m in Sources */,
+				F78CC3891BE3C7D9009235CC /* IAP.m in Sources */,
+				F76D07B21BD7F43D00A23207 /* LeaderBoardVC.m in Sources */,
+				F76D073E1BD0359400A23207 /* AppDelegate.m in Sources */,
+				F78CC3861BE3C727009235CC /* IAPHelper.m in Sources */,
+				F76D07761BD09B8500A23207 /* ChooseTypeScreenVC.m in Sources */,
+				F76D077E1BD0A50500A23207 /* ReviewGameScreenVC.m in Sources */,
+				F76D07731BD0886200A23207 /* StartScreenVC.m in Sources */,
+				F76D078F1BD150B000A23207 /* GameLogic.m in Sources */,
+				F76D07791BD0A3BC00A23207 /* ChooseLevelScreenVC.m in Sources */,
+				F76D079A1BD6A24500A23207 /* PauseGameVC.m in Sources */,
+				F78CC38C1BE51146009235CC /* UIView+Explode.m in Sources */,
+				F76D07951BD2F4EE00A23207 /* GameCompletedVC.m in Sources */,
+				F76D07831BD1389000A23207 /* GamePlayVC.m in Sources */,
+				F76D07A01BD6CEEA00A23207 /* GetPowerupsVC.m in Sources */,
+				F76D073B1BD0359400A23207 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F76D074B1BD0359400A23207 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F76D07541BD0359400A23207 /* MathGameTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F76D07561BD0359400A23207 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F76D075F1BD0359400A23207 /* MathGameUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F76D07511BD0359400A23207 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F76D07351BD0359400A23207 /* MathGame */;
+			targetProxy = F76D07501BD0359400A23207 /* PBXContainerItemProxy */;
+		};
+		F76D075C1BD0359400A23207 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F76D07351BD0359400A23207 /* MathGame */;
+			targetProxy = F76D075B1BD0359400A23207 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F76D07421BD0359400A23207 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F76D07431BD0359400A23207 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F76D07471BD0359400A23207 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F76D07481BD0359400A23207 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F76D07611BD0359500A23207 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F76D07621BD0359500A23207 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F76D07641BD0359500A23207 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = MathGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appselevated.MathBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F76D07651BD0359500A23207 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = MathGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appselevated.MathBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F76D07671BD0359500A23207 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MathGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nathanlarson.MathGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MathGame.app/MathGame";
+			};
+			name = Debug;
+		};
+		F76D07681BD0359500A23207 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MathGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nathanlarson.MathGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MathGame.app/MathGame";
+			};
+			name = Release;
+		};
+		F76D076A1BD0359500A23207 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MathGameUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nathanlarson.MathGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MathGame;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		F76D076B1BD0359500A23207 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MathGameUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nathanlarson.MathGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MathGame;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F76D07311BD0359400A23207 /* Build configuration list for PBXProject "MathGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F76D07611BD0359500A23207 /* Debug */,
+				F76D07621BD0359500A23207 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F76D07631BD0359500A23207 /* Build configuration list for PBXNativeTarget "MathGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F76D07641BD0359500A23207 /* Debug */,
+				F76D07651BD0359500A23207 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F76D07661BD0359500A23207 /* Build configuration list for PBXNativeTarget "MathGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F76D07671BD0359500A23207 /* Debug */,
+				F76D07681BD0359500A23207 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F76D07691BD0359500A23207 /* Build configuration list for PBXNativeTarget "MathGameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F76D076A1BD0359500A23207 /* Debug */,
+				F76D076B1BD0359500A23207 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F76D072E1BD0359400A23207 /* Project object */;
+}
